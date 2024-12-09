@@ -1,0 +1,19 @@
+name: Call CICD Workflow
+
+on:
+  pull_request:
+    branches:
+      - main
+      - dev
+      - test
+  push:
+    branches:
+      - main
+      - dev
+      - test
+
+jobs:
+  call_cicd_fe_workflow:
+    name: Llamar al workflow reutilizable de CICD para FE
+    uses: DevOps-Obligatorio-MV276756/Obligatorio-DevOps/.github/workflows/cicd_fe_workflow.yml@main
+    secrets: inherit
