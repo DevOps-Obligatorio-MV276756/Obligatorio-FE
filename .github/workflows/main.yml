@@ -7,6 +7,10 @@ on:
       - dev
       - test
 
+permissions: 
+  id-token: write # required!
+  contents: read
+
 jobs:
   call_cicd_fe_workflow:
     name: Llamar al workflow reutilizable de CICD para FE
