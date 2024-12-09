@@ -8,7 +8,8 @@ on:
       - test
 
 permissions: 
-  write-all
+  id-token: write # required!
+  contents: read
 
 jobs:
   call_cicd_fe_workflow:
