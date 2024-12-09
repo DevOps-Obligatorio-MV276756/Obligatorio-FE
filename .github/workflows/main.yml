@@ -6,11 +6,6 @@ on:
       - main
       - dev
       - test
-  push:
-    branches:
-      - main
-      - dev
-      - test
 
 jobs:
   call_cicd_fe_workflow:
